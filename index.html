@@ -1,64 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Maquetación en HTML y CSS</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <title>Maquetació en HTML y CSS</title>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 
 <body>
-    <div class="contedor">
-        <!-- Creacion del header -->
-        <header class="cabeceraPrincipal">
-            <h1>LOGOTIPO</h1>
-            <section class="seccionCabecera">
-                <nav class="navegacion">
-                    <a href="#">Registrar</a>
-                    <a href="#">Login</a>
-                </nav>
-                <aside>
-                    <input class="buscador" type="text" placeholder="Buscar" />
-                </aside>
-            </section>
-        </header>
-
-        <!-- Creacion de la navegacion -->
-        <nav class="menuPrincipal">
-            <h2>MENU PRINCIPAL</h2>
-        </nav>
-
-        <!-- Creacion del seccion del slider -->
-        <section class="galeriaPrincipal">
-            <h2>GALERIA</h2>
+    <header class="cabeceraPrincipal">
+        <div class="logo">
+            <p class="iniciales-logo">
+                IW
+            </p>
+            <h1>Ingeniería web</h1>
+        </div>
+        <section class="seccionCabecera">
+            <aside class="buscador">
+                <div class="barra-busqueda">
+                    <input type="text" placeholder="Buscar">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </div>
+            </aside>
         </section>
-
-        <!-- Creacion de los articles -->
-        <main class="noti">
-            <section class="noticias1">
-                <h2>NOTICIA 1</h2>
-            </section>
-            <section class="noticias2">
-                <h2>NOTICIA 2</h2>
-            </section>
-        </main>
-
-        <!-- Creacion de los sponsers -->
-        <h2>SPONSOR</h2>
-        <aside class="sponsor">
-            <div class="spon"></div>
-            <div class="spon"></div>
-            <div class="spon"></div>
-            <div class="spon"></div>
-            <div class="spon"></div>
-        </aside>
-
-        <!-- Creacion del footer -->
-        <footer class="piePagina">
-            <h5>Todos los derechos reservados UTPL 2020</h5>
-        </footer>
-    </div>
+    </header>
+    <nav class="menuPrincipal">
+        <a href=""><i class="fas fa-home"></i> Inicio</a>
+        <a href=""><i class="fas fa-address-card"></i>Acerca de</a>
+        <a href=""><i class="fas fa-tags"></i>Artículos</a>
+        <a href=""><i class="fas fa-phone"></i>Contactos</a>
+        <a href=""><i class="fas fa-address-book"></i>Registro</a>
+    </nav>
+    <section class="galeriaPrinicpal">
+        <img src="img/slide-1.jpg" alt="Imagen 1 del Slider prinipal">
+    </section>
+    <main>
+        <section class="articulo">
+            <article class="noticias">
+                <div class="contenedor1">
+                    <img src="img/img-01.jpg" alt="">
+                </div>
+                <div class="contenedor-texto">
+                    <div>
+                        <h2 class="titulo">
+                            Noticia de desarrollo web, metodologías
+                        </h2>
+                        <p class="fecha">Abril 24, 2020</p>
+                    </div>
+                    <p class="extracto">
+                        Información completa de la noticia en cuanto al desarrollo web, existen nuevas tecnologías de desarrolo..
+                    </p>
+                    <a href="" class="btn-link">Leer más</a>
+                </div>
+            </article>
+        </section>
+        <section class="articulo">
+            <article class="noticias">
+                <div class="contenedor1">
+                    <img src="img/img-02.jpg " alt="">
+                </div>
+                <div class="contenedor-texto">
+                    <div>
+                        <h2 class="titulo">
+                            Noticia de desarrollo web, metodologías
+                        </h2>
+                        <p class="fecha">Abril 25, 2020</p>
+                    </div>
+                    <p class="extracto">
+                        Información completa de la noticia en cuanto al desarrollo web, existen nuevas tecnologías de desarrolo..
+                    </p>
+                    <a href="" class="btn-link">Leer más</a>
+                </div>
+            </article>
+        </section>
+    </main>
+    <aside class="sponsor">
+        <article class="entrada-blog">
+            <h2>HTML5</h2>
+            <img src="img/html.jpg" class="flip-1">
+            <p>Maecenas maximus urna vitae nisl semper, id volutpat ipsum scelerisque. Aenean nec ipsum finibus, eleifend dolor at, venenatis risus. Quisque varius orci et augue scelerisque luctus.</p>
+            <a href="#" class="boton d-block">Leer más</a>
+        </article>
+        <article class="entrada-blog">
+            <h2>CSS3</h2>
+            <img src="img/css3.jpg" class="flip-1">
+            <p>Maecenas maximus urna vitae nisl semper, id volutpat ipsum scelerisque. Aenean nec ipsum finibus, eleifend dolor at, venenatis risus. Quisque varius orci et augue scelerisque luctus.</p>
+            <a href="#" class="boton d-block">Leer más</a>
+        </article>
+        <article class="entrada-blog">
+            <h2>GitHub</h2>
+            <img src="img/git1.jpeg" class="flip-1">
+            <p>Maecenas maximus urna vitae nisl semper, id volutpat ipsum scelerisque. Aenean nec ipsum finibus, eleifend dolor at, venenatis risus. Quisque varius orci et augue scelerisque luctus.</p>
+            <a href="#" class="boton d-block">Leer más</a>
+        </article>
+        <article class="entrada-blog">
+            <h2>Visual Studio Code</h2>
+            <img src="img/vc.jpg" class="flip-1">
+            <p>Maecenas maximus urna vitae nisl semper, id volutpat ipsum scelerisque. Aenean nec ipsum finibus, eleifend dolor at, venenatis risus. Quisque varius orci et augue scelerisque luctus.</p>
+            <a href="#" class="boton d-block">Leer más</a>
+        </article>
+    </aside>
+    <footer class="site-footer seccion">
+        <div class="contenedor contenedor-footer">
+            <nav class="navegacion">
+                <a href="#">Inicio</a>
+                <a href="#">Acerca de</a>
+                <a href="#">Articulos</a>
+                <a href="#">Contactos</a>
+                <a href="#">Registro</a>
+            </nav>
+            <p class="copyright">Todos los Derechos Reservados UTPL 2020 &copy;</p>
+        </div>
+    </footer>
 </body>
 
 </html>
